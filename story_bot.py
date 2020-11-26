@@ -1,5 +1,6 @@
 # Work with Python 3.6
 import discord
+import os
 
 TOKEN = os.environ['DISCORD_TOKEN']
 
