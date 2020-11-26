@@ -1,7 +1,7 @@
 # Work with Python 3.6
 import discord
 
-TOKEN = ''
+TOKEN = os.environ['DISCORD_TOKEN']
 
 client = discord.Client()
 
