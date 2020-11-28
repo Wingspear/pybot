@@ -12,7 +12,7 @@ def file_is_empty():
     global path
     file = open(path, "r")
     try:
-        data = file.readline()
+        data = file.read()
         return data == ""
     finally:
         file.close()
@@ -42,7 +42,7 @@ def read_file():
     global path
     file = open(path, "r")
     try:
-        return file.readline()
+        return file.read()
     finally:
         file.close()
 
