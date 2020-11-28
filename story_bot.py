@@ -9,13 +9,7 @@ path = "data.txt"
 word_list = []
 
 def file_is_empty():
-    global path
-    file = open(path, "r")
-    try:
-        data = file.read()
-        return data == ""
-    finally:
-        file.close()
+    return os.path.getsize(path)
 
 def clear_file():
     global path
