@@ -14,7 +14,7 @@ def file_is_empty():
 def clear_file():
     global path
     #clear file
-    file = open("data.txt", "w")
+    file = open("data.txt", "w").close()
 
 def write_to_file(data):
     global path
@@ -92,5 +92,6 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
+    clear_file()
 
 client.run(TOKEN)
