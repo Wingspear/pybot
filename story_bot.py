@@ -89,7 +89,7 @@ async def on_message(message):
             msg = 'And that\'s the end of the story! This was what the story was about:'
             await message.channel.send(msg)
             data = read_file()
-            await message.channel.send(data)
+            await message.channel.send("\n\n" + data)
             clear_file()
 
 @client.event
